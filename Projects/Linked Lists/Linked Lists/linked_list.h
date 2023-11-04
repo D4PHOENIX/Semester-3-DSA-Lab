@@ -27,8 +27,8 @@ public:
 			temp->value = v;
 			temp->next = NULL;
 		}
-
 	}
+	// display function
 	void displayList() {
 		cout << "Values are: " << endl;
 		cout << first->value << endl;
@@ -39,6 +39,7 @@ public:
 			cout << temp->value;
 		}
 	}
+	// search function
 	void searchList(int v) {
 		Node* temp = first;
 		while (temp != NULL) {
@@ -51,16 +52,61 @@ public:
 		cout << "Value not found" << endl;
 
 	}
-
-	void deleteList() {
-		Node* temp = first;
-		while (temp != NULL)
-		{
-			Node* temp2 = temp->next;
-			delete temp;
-			temp = temp2;
+	// delete function
+	void deleteList(int v) {
+		Node* temp = searchList(v);
+		if (temp == NULL){
+			cout << "List is Empty!";
 		}
-		first = NULL;
+		else if (temp != NULL){
+			Node* temp1 = temp;
+			Node* temp2 = first;
+			if (temp1->next!=NULL){
+				first = first->next;
+				delete temp1;
+				return 0;
+			}
+			else if (temp1->next !=temp){
+				temp2 = temp2->next;
+			}
+			else if(temp1->next == temp){
+				temp2->next = temp1->next;
+				delete temp1;
+				return 0;
+			}
+			else
+			{
+				while (temp1->next != temp){
+					temp1 = temp1->next;
+				}
+				if (temp1->next == temp){
+					temp1->next = temp->next;
+					delete temp;
+					return 0;
+				}
+			}
+		}
 	}
-
+	void deleteList(int v) {
+		if (first == NULL) {
+			cout << "List is Empty!" << endl;
+			return;
+		}
+		if (first->value == v) {
+			Node* temp = first;
+			first = first->next;
+			delete temp;
+			return;
+		}
+		Node* temp1 = first;
+		while (temp1->next != NULL) {
+			if (temp1->next->value == v) {
+				Node* temp2 = temp1->next;
+				temp1->next = temp2->next;
+				delete temp2;
+				return;
+			}
+			temp1 = temp1->next;
+		}
+	}
 };

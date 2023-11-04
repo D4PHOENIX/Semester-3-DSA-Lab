@@ -1,2 +1,4 @@
 ﻿  Linked List.cpp
-  Linked Lists.vcxproj -> D:\University\Programming\DSA Lab\Projects\Linked Lists\x64\Debug\Linked Lists.exe
+D:\University\Programming\DSA Lab\Projects\Linked Lists\Linked Lists\Linked List.cpp(9,8): error C2659: '=': function as left operand
+D:\University\Programming\DSA Lab\Projects\Linked Lists\Linked Lists\Linked List.cpp(13,3): error C2541: 'delete': cannot delete objects that are not pointers
+D:\University\Programming\DSA Lab\Projects\Linked Lists\Linked Lists\Linked List.cpp(22,10): error C2065: 'Null': undeclared identifier
