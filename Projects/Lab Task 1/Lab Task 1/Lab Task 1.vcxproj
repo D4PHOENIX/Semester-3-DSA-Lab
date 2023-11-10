@@ -130,6 +130,7 @@
     <ClInclude Include="Array.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="dynamicArray.cpp" />
     <ClCompile Include="dynamic_array.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

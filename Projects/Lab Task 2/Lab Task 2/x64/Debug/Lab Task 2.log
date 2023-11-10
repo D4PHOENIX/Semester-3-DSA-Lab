@@ -1,0 +1,3 @@
+﻿  Main.cpp
+D:\University\Programming\DSA Lab\Projects\Lab Task 2\Lab Task 2\linked_list.h(181): warning C4715: 'linked_list::searchNode': not all control paths return a value
+  Lab Task 2.vcxproj -> D:\University\Programming\DSA Lab\Projects\Lab Task 2\x64\Debug\Lab Task 2.exe

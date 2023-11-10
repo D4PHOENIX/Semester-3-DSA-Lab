@@ -1,73 +1,92 @@
 #include <iostream>
 using namespace std;
-const int maxitem = 20;
-class ListofNum
+
+class dynamicArray
 {
-private:
-    int size;
-    int item[maxitem];
 public:
-    ListofNum()
+    int *array;
+    int size;
+    dynamicArray(int size)
     {
-        size = 0;
+        this->size = size;
+        array = new int[size];
     }
-    void count()
+    ~dynamicArray()
     {
-        cout << "Values in List are " << size<<endl;
-        
+        delete[] array;
     }
-    void add(int value)
+
+    // input function for array
+    void input()
     {
-        if (size < 20)
+        for (int i = 0; i < size; i++)
         {
-            item[size] = value;
-            size++;
+            int inputNum;
+            do {
+                cout << "Enter value for index " << i << " (0-12): ";
+                cin >> inputNum;
+            } while (inputNum < 0 || inputNum > 12);
+            *(array + i) = inputNum;
         }
     }
-    void insert(int value, int pos)
+
+    // calculating average
+    double average()
     {
-        if (size < 20 && pos >= 0 && pos <= size)
+        double sum = 0;
+        for (int i = 0; i < size; i++)
         {
-            for(int i = size-1; i >= pos ; i--)
-                item[i + 1] = item[i];
-            item[pos] = value;
-            size++;
+            sum += array[i];
         }
+        return sum / size;
     }
-    void retrieve(int pos)
+
+    // calculating factorial
+    int factorial(int n)
     {
-        if (pos >= 0 && pos < size)
+        if (n == 0)
         {
-            cout << "Value on position " << pos << "is " << item[pos]<<endl;
+            return 1;
         }
         else
-            cout << "Position not found"<<endl;
-    }
-    void display()
-    {
-        cout << "Values in List are following ";
-        for (int i = 0; i < size; i++)
-            cout << item[i] << " ";
+        {
+            return n * factorial(n - 1);
+        }
     }
 
+    // printing factorials
+    void displayFactorials()
+    {
+        for (int i = 0; i < size; i++)
+        {
+            cout << "Factorial of " << array[i] << " is " << factorial(array[i]) << endl;
+        }
+    }
 };
+
 int main()
 {
-    ListofNum is;
-    is.add(10);
-    is.add(20);
-    is.add(30);
-    is.add(40);
-    is.count();
-    is.display();
-    is.retrieve(3);
-    is.insert(60, 2);
-    is.display();
-    is.add(50);
-    is.display();
-    // is.itemdelete(2);
-    cout << "After del the value" << endl;
-    is.display();
-    is.count();
+    // taking size of array from user
+    int size;
+    cout << "Enter size of array (1-20): ";
+    cin >> size;
+    // checking if size is valid
+    if (size < 1 || size > 20)
+    {
+        cout << "Invalid size entered. Program terminated." << endl;
+    }
+    else
+    {
+    // creating dynamic array    
+    dynamicArray array(size);
+    // taking input from user
+    array.input();
+    // displaying factorials
+    cout<<"\n Factorials of all elements: "<<endl;
+    array.displayFactorials();
+    // displaying average
+    cout << "\nAverage of all elements: " << array.average() << endl;
+    }
 
+return 0;
 }
