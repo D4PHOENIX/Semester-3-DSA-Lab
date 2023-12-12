@@ -1,0 +1,9 @@
+﻿  Main.cpp
+D:\University\Programming\DSA Lab\Projects\Prefix and Postfix\Prefix and Postfix\PrePostSolve.h(10,18): warning C4267: 'initializing': conversion from 'size_t' to 'long', possible loss of data
+D:\University\Programming\DSA Lab\Projects\Prefix and Postfix\Prefix and Postfix\PrePostSolve.h(51,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  PrePostSolve.h
+D:\University\Programming\DSA Lab\Projects\Prefix and Postfix\Prefix and Postfix\PrePostSolve.h(10,18): warning C4267: 'initializing': conversion from 'size_t' to 'long', possible loss of data
+D:\University\Programming\DSA Lab\Projects\Prefix and Postfix\Prefix and Postfix\PrePostSolve.h(51,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+D:\University\Programming\DSA Lab\Projects\Prefix and Postfix\Prefix and Postfix\Stack.h(47): warning C4715: 'Stack::peek': not all control paths return a value
+  Prefix and Postfix.vcxproj -> D:\University\Programming\DSA Lab\Projects\Prefix and Postfix\x64\Debug\Prefix and Postfix.exe

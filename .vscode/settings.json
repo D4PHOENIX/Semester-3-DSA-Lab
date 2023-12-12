@@ -1,6 +1,18 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "ostream": "cpp",
+        "initializer_list": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "xlocmon": "cpp",
+        "xtr1common": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "xmemory": "cpp",
+        "xlocale": "cpp"
     }
 }
