@@ -39,19 +39,6 @@ public:
 			cout << temp->value;
 		}
 	}
-	// search function
-	void searchList(int v) {
-		Node* temp = first;
-		while (temp != NULL) {
-			if (temp->value == v) {
-				cout << "Value found" << endl;
-				return;
-			}
-			temp = temp->next;
-		}
-		cout << "Value not found" << endl;
-
-	}
 	// delete function
 	void deleteList(int v) {
 		Node* temp = searchList(v);
@@ -108,5 +95,19 @@ public:
 			}
 			temp1 = temp1->next;
 		}
+	}
+private:
+	// search function
+	void searchList(int v) {
+		Node* temp = first;
+		while (temp != NULL) {
+			if (temp->value == v) {
+				cout << "Value found" << endl;
+				return;
+			}
+			temp = temp->next;
+		}
+		cout << "Value not found" << endl;
+
 	}
 };
