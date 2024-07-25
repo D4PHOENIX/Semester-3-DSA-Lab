@@ -1,0 +1,10 @@
+﻿  Main.cpp
+D:\University\Programming\DSA Lab\Projects\Floating Point Tree\Floating Point Tree\Main.cpp(11,14): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University\Programming\DSA Lab\Projects\Floating Point Tree\Floating Point Tree\Main.cpp(12,14): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University\Programming\DSA Lab\Projects\Floating Point Tree\Floating Point Tree\Main.cpp(13,14): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University\Programming\DSA Lab\Projects\Floating Point Tree\Floating Point Tree\Main.cpp(14,14): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University\Programming\DSA Lab\Projects\Floating Point Tree\Floating Point Tree\Main.cpp(15,14): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University\Programming\DSA Lab\Projects\Floating Point Tree\Floating Point Tree\Main.cpp(18,14): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University\Programming\DSA Lab\Projects\Floating Point Tree\Floating Point Tree\Main.cpp(19,14): warning C4305: 'argument': truncation from 'double' to 'float'
+D:\University\Programming\DSA Lab\Projects\Floating Point Tree\Floating Point Tree\Main.cpp(20,14): warning C4305: 'argument': truncation from 'double' to 'float'
+  Floating Point Tree.vcxproj -> D:\University\Programming\DSA Lab\Projects\Floating Point Tree\x64\Debug\Floating Point Tree.exe

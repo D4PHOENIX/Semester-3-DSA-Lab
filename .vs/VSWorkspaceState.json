@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Class Tasks"
+    "\\Class Tasks",
+    "\\Projects",
+    "\\Projects\\Linked Lists"
   ],
-  "SelectedNode": "\\Linked Lists",
+  "SelectedNode": "\\Projects\\Linked Lists",
   "PreviewInSolutionExplorer": false
 }

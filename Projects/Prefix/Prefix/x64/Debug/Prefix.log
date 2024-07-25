@@ -1,5 +1,10 @@
-﻿  Main.cpp
-D:\University\Programming\DSA Lab\Projects\Prefix\Prefix\PrePostSolve.h(10,18): warning C4267: 'initializing': conversion from 'size_t' to 'long', possible loss of data
-D:\University\Programming\DSA Lab\Projects\Prefix\Prefix\PrePostSolve.h(47,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Prefix.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Main.cpp
 D:\University\Programming\DSA Lab\Projects\Prefix\Prefix\Stack.h(47): warning C4715: 'Stack::peek': not all control paths return a value
-  Prefix.vcxproj -> D:\University\Programming\DSA Lab\Projects\Prefix\x64\Debug\Prefix.exe
+D:\University\Programming\DSA Lab\Projects\Prefix\Prefix\PrePostSolve.h(9,18): warning C4267: 'initializing': conversion from 'size_t' to 'long', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+D:\University\Programming\DSA Lab\Projects\Prefix\Prefix\PrePostSolve.h(48,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+  Prefix.vcxproj -> D:\University\Programming\DSA Lab\Projects\Prefix\x64\Debug\Prefix and Postfix.exe
